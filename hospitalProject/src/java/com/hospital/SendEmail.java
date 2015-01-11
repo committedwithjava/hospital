@@ -38,7 +38,7 @@ public class SendEmail {
                 new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(
-                                "maheshvj02@gmail.com", "9551086421mine");
+                                "maheshvj02@gmail.com", "pass");
                     }
                 });
         try {
@@ -60,7 +60,7 @@ public class SendEmail {
 
             // Send message
             Transport transport = session.getTransport("smtp");
-            transport.connect("smtp.gmail.com", "maheshvj02@gmail.com", "9551086421mine");
+            transport.connect("smtp.gmail.com", "maheshvj02@gmail.com", "pass");
             transport.send(message);
             System.out.println("Sent message successfully....");
         } catch (MessagingException mex) {

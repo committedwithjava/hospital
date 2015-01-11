@@ -54,7 +54,7 @@ public class SessionIdentifierGenerator {
                 new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(
-                                "maheshvj02@gmail.com", "9551086421mine");
+                                "maheshvj02@gmail.com", "pass");
                     }
                 });
         try {
@@ -81,7 +81,7 @@ public class SessionIdentifierGenerator {
            // message.setText("");
             // Send message
            // Transport transport = session.getTransport("smtp");
-            //transport.connect("smtp.gmail.com", "maheshvj02@gmail.com", "9551086421mine");
+            //transport.connect("smtp.gmail.com", "maheshvj02@gmail.com", "pass");
             Transport.send(message);
             
             System.out.println("Sent message successfully....");
